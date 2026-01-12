@@ -317,7 +317,7 @@ void ESBController::setPromiscuousConfiguration() {
   this->radio->setEndianness(BIG);
   this->radio->setTxPower(POS8_DBM);
   this->radio->enableRssi();
-  this->radio->setPhy(ESB_2MBITS);
+  this->radio->setPhy(ESB_1MBITS);
   this->radio->setHeader(0,0,0);
   this->radio->setWhitening(NO_WHITENING);
   this->radio->setWhiteningDataIv(0);
@@ -356,7 +356,7 @@ void ESBController::setFollowConfiguration(uint8_t address[5]) {
   this->radio->setEndianness(BIG);
   this->radio->setTxPower(POS8_DBM);
   this->radio->enableRssi();
-  this->radio->setPhy(ESB_2MBITS);
+  this->radio->setPhy(ESB_1MBITS);
   this->radio->setHeader(0,6,3);
   this->radio->setWhitening(NO_WHITENING);
   this->radio->setWhiteningDataIv(0);
@@ -384,7 +384,7 @@ void ESBController::setJammerConfiguration() {
   this->radio->setEndianness(BIG);
   this->radio->setTxPower(POS8_DBM);
   this->radio->disableRssi();
-  this->radio->setPhy(ESB_2MBITS);
+  this->radio->setPhy(ESB_1MBITS);
   this->radio->setHeader(0,0,0);
   this->radio->setWhitening(NO_WHITENING);
   this->radio->setWhiteningDataIv(0);
